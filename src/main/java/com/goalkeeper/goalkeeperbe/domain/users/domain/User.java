@@ -9,6 +9,7 @@ import jakarta.persistence.Enumerated;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import jakarta.validation.constraints.Email;
 import java.time.LocalDateTime;
 import lombok.AllArgsConstructor;
@@ -23,7 +24,8 @@ import lombok.Setter;
 @NoArgsConstructor
 @AllArgsConstructor
 @Entity
-public class Users extends BaseTimeEntity {
+@Table(name="users")
+public class User extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "user_id")
@@ -42,9 +44,6 @@ public class Users extends BaseTimeEntity {
 
     @Column(name = "year", nullable = true)
     private Integer year;
-
-    @Column(name = "user_department", nullable = true)
-    private String userDepartment;
 
     @Column()
     private LocalDateTime deletedAt;
