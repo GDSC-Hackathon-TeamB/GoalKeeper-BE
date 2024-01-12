@@ -1,13 +1,13 @@
-package com.goalkeeper.goalkeeperbe.demo;
+package com.goalkeeper.goalkeeperbe;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class DemoApplication {
+public class GoalKeeperBeApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(DemoApplication.class, args);
+		SpringApplication.run(GoalKeeperBeApplication.class, args);
 	}
 
 }

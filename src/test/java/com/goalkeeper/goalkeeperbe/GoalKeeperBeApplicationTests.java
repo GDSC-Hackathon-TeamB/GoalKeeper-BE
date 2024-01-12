@@ -1,10 +1,10 @@
-package com.goalkeeper.goalkeeperbe.demo;
+package com.goalkeeper.goalkeeperbe;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class DemoApplicationTests {
+class GoalKeeperBeApplicationTests {
 
 	@Test
 	void contextLoads() {
