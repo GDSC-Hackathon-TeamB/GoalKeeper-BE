@@ -19,7 +19,7 @@ import lombok.Setter;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
+@Entity(name = "prefer")
 public class Prefer extends BaseTimeEntity {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -28,7 +28,7 @@ public class Prefer extends BaseTimeEntity {
 
     @OneToOne
     @JoinColumn(name = "user_id", referencedColumnName = "user_id")
-    private Users users;
+    private User user;
 
     @Column(name = "prefer_organization", nullable = false)
     private String preferOrganization;
