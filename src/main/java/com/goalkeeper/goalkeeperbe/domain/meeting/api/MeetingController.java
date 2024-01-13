@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class MeetingController {
         private final MeetingService meetingService;
-       @Scheduled(cron = "00 05 20 * * *", zone = "Asia/Seoul")
+       @Scheduled(cron = "0 5 20 * * *", zone = "Asia/Seoul")
         public void runMatchingAlgorithm() {
             System.out.println("meeting algorithm starts");
             meetingService.match();
