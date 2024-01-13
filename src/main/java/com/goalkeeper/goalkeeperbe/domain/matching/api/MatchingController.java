@@ -10,8 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequiredArgsConstructor
 public class MatchingController {
     private final MatchingService matchingService;
-//    @Scheduled(cron = "10 49 06 * * *", zone = "Asia/Seoul")
-    @PostConstruct
+    @Scheduled(cron = "0 0 20 * * *", zone = "Asia/Seoul")
     public void runMatchingAlgorithm() {
         System.out.println("Matching algorithm starts");
         matchingService.match();
