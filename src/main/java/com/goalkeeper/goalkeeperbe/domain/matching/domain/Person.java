@@ -16,6 +16,7 @@ public class Person {
     private Prefer prefer;
     private String name;  // 이름
     private String preferPersonal;  // 선호하는 다짐
+    private String preferOrganization;
     private List<String> preferences;  // 선호도 목록
     private int year; // 나이
 
@@ -25,6 +26,7 @@ public class Person {
         this.gender = user.getUserGender();
         this.name = user.getUserNickname();
         this.preferPersonal = prefer.getPreferPersonal();
+        this.preferOrganization = prefer.getPreferOrganization();
         this.year = user.getYear();
         this.preferences = new ArrayList<>();
     }
